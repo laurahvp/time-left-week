@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 
-    <title>Time Left this week</title>
+    <title>time left in this week</title>
     <style>
         
         body{
             text-align: center;
-            font-family: 'Apercu medium italic', sans-serif;
-            font-size: 20px;
+            font-family: 'Apercu', sans-serif;
             color: #ff8502;
             background-color: #ffff;
         }
@@ -27,12 +26,9 @@
         .box{
             display: inline-block;
             display: inline-block;
-            font-family: 'Apercu medium italic', sans-serif;
-            font-size: 20px;
             color: #f2c2cc;
-            padding: 3px;
-            border-radius: 10px;
-            min-width: 40px;
+            padding: 10px;
+            border-radius: 5px;
         }
         #days{
             background-color:#ff8502;
@@ -46,17 +42,6 @@
         h2{
             display: inline-block;
             margin-right: 10px;
-            margin-block-start: 5px;
-            margin-top: 0;
-        }
-        h3{
-            text-align: center;
-            
-        }
-        .small{
-            font-family: 'Apercu medium italic', sans-serif;
-            font-size: 20px;
-            font-weight: lighter;
         }
 
 
@@ -66,9 +51,9 @@
     
     <div class="card">
     <div id="counter">
-    <h3>
+    <h2>
         time left in this week
-    </h3>
+    </h2>
     
         <h2 class="box" id="days"></h2>
         <h2 class="box" id="hours"></h2>
@@ -87,8 +72,8 @@
     function showRemaining (){
     now = new Date();
     // days_in_this_month = new Date( now.getFullYear(), now.getMonth()+1, 0).getDate(); 
-    // week starts on Monday
-   
+    // week starts on monday
+
     if(now.getDay() == 0 ){
       d = 6
     }
